@@ -1,0 +1,379 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: #eed2cc;
+  height: 70px;
+  padding: 10px;
+  text-align: center;
+}
+
+.addmore{
+  height: 2.5em;
+  background-color: #d0b9a6;
+  margin-top: 20px;
+  margin-right: 32px;
+} 
+#addmore{
+  height: 2.5em;
+  background-color: #d0b9a6;
+  margin-left: 34%;
+  margin-top: 20px;
+} 
+#addmoreeducation:hover , #addmore:hover{
+  background-color: #eb9f11;
+}
+
+#addmoreeducation{
+  margin-top: 20px;
+  height: 2.5em;
+  background-color: #d0b9a6;
+  margin-left: 34%;
+}
+.hidden{
+  display: none;
+}
+input {
+  margin-bottom: 30px;
+  height: 20px;
+}
+
+body {
+  margin: 18px;
+  background-image: url("./image.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+#container{
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Times New Roman ', 'Arial Narrow Bold', sans-serif;
+  color: #eb9f11;
+  margin:auto; 
+}
+.hide{
+display: none;
+
+}
+file{
+  width: 100%;
+  margin-left: 50px;
+}
+button:hover{
+  background-color:#e18d48
+}
+form {
+  max-width: 800px;
+  margin: auto;
+
+  background-color: #a1683a;
+  border-radius: 9px;
+  color: white;
+  padding: 20px;
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 3px 3px 3px burlywood;
+}
+
+fieldset {
+  border: 2px solid #d8dbe2;
+  border-radius: 9px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: "Times New Roman", Times;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  background-color: bisque;
+  text-decoration: none;
+  margin-top: 10px;
+  border: 1px solid burlywood;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ppic{
+  display: block;
+  margin: 0 auto;
+  border: 2px solid black;
+  box-shadow: 0px 4px 8px rgba(11,7 ,200 ,0.5);
+  border-radius: 500%;
+  width: 5em;
+  height: 5em;
+  object-fit: cover;
+}
+#ppic{
+
+  padding: 15px;
+  color: black;
+  height: 50px
+}
+input:hover,
+textarea:hover {
+  background-color: ghostwhite;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+
+}
+input:focus {
+  background-color: bisque;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+}
+
+button {
+  background-color: #eb9f11;
+  height: 3em;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 33px;
+}
+#skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skill {
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#add-skill-btn {
+  background-color: rgb(87, 52, 52);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-skill-btn:hover {
+  background-color: burlywood;
+}
+
+#skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#skills-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#skills-list li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 30px;
+    }
+  form {
+    max-width: 90%;
+    padding: 10px;
+  }
+  fieldset {
+    padding: 10px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  form {
+    max-width: 80%;
+    padding: 15px;
+  }
+  fieldset {
+    padding: 15px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  form {
+    max-width: 600px;
+    padding: 20px;
+  }
+  fieldset {
+    padding: 20px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 20px;
+  }
+}
+#generate-resume{
+width: 90%;
+margin-bottom: 30px;
+margin-left: 20px;
+}
+
+/* Resume Output Styles */
+#resume-output {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for better readability */
+  color: #333333; /* Dark text color for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #0000001a; /* Subtle shadow for depth */
+  font-family: 'Arial', sans-serif;
+}
+
+#resume-output h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #0056b3; /* Dark blue color for headers */
+  border: 2px solid black;
+}
+
+#resume-output h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #003d80; /* Slightly darker blue for sub-headers */
+  border-bottom: 1px solid black;
+}
+
+#resume-output p,
+#resume-output ul {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+#resume-output ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#resume-output ul li {
+  margin-bottom: 5px;
+}
+
+#resume-output img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: block;
+}
+.share {
+  background-color:#51291E;
+}
+.share button{
+background-color: #79B791;
+font-size: 12px;
+margin-bottom :7px;
+color: black
+;
+}
+.share button:hover{
+  background-color: #a1683a;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  #resume-output {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  #resume-output h1 {
+    font-size: 28px;
+  }
+
+  #resume-output h2 {
+    font-size: 22px;
+  }
+
+  #resume-output p,
+  #resume-output ul {
+    font-size: 14px;
+  }
+ 
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  #resume-output {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  #resume-output h1 {
+    font-size: 24px;
+  }
+
+  #resume-output h2 {
+    font-size: 18px;
+  }
+
+  #resume-output p,
+  #resume-output ul {
+    font-size: 12px;
+  }
+
+  #resume-output img {
+    width: 80px;
+    height: 80px;
+  }
+  .share-button{
+    font-size: 10px;
+margin-bottom :7px;
+  }
+}
+
+/* Small Mobile Devices (360px and below) */
+@media (max-width: 360px) {
+  #resume-output {
+    max-width: 98%;
+    padding: 8px;
+  }
+
+  #resume-output h1 {
+    font-size: 20px;
+  }
+
+  #resume-output h2 {
+    font-size: 16px;
+  }
+
+  #resume-output p,
+  #resume-output ul {
+    font-size: 10px;
+  }
+
+  #resume-output img {
+    width: 70px;
+    height: 70px;
+  }
+}
